@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.sync.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style id="compiled-css"></style>
+</head>
+<body class="bg-black font-sans">
+    <div class="scroll-container">
+        <div id="welcome-section" class="fixed-section">
+            <h1 class="welcome-text">
+                Welcome my <span id="changing-word">Master</span>
+                <span class="filled">Welcome my <span id="filled-changing-word">Master</span></span>
+            </h1>
+        </div>
+        <div id="cards-section" class="fixed-section">
+            <div class="card-container">
+                <div id="card-0" class="card">
+                    <div class="card-content">
+                        <h2 class="text-2xl font-bold">About Me</h2>
+                        <div class="word-container">
+                            <p class="hidden">My name is Charlie, a 22-year-old graduate with a Bachelor of Science in Electronics Engineering.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card">
+                    <div class="card-content">
+                        <h2 class="text-2xl font-bold">Work Experience</h2>
+                        <div class="word-container">
+                            <p class="hidden">(OJT) JUNE 2023 - JULY 2023 Developed an arrival and departure system from scratch for truck operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-2" class="card">
+                    <div class="card-content">
+                        <h2 class="text-2xl font-bold">Skills</h2>
+                        <div class="word-container">
+                            <p class="hidden">Knowledgeable in Python, JavaScript, Autodesk Inventor, Microsoft Office Tools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
